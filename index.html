@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Seu Nome | Professor de Física e Matemática</title>
+<meta name="description" content="Professor de Física e Matemática. Apresentação, vídeo de aula e contatos.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Instrument+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#10223A; --paper:#F3F5F4; --text:#1B2635; --muted:#5A6676;
+  --blue:#58C4DD; --gold:#E8B93C; --line:#D5DBE0;
+  --serif:"Newsreader",Georgia,serif; --sans:"Instrument Sans",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--text);font:1.05rem/1.65 var(--sans)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{max-width:62rem;margin:0 auto;padding:0 1.5rem}
+
+/* Hero */
+header{background:var(--ink);color:#fff;padding:4.5rem 0 0;overflow:hidden}
+h1{font:600 clamp(2.4rem,6vw,4.2rem)/1.05 var(--serif);margin:0 0 1rem;max-width:16ch}
+.sub{font:italic 400 clamp(1.2rem,2.4vw,1.6rem)/1.4 var(--serif);color:var(--blue);margin:0 0 2rem}
+.cta{display:inline-block;background:var(--gold);color:var(--ink);font-weight:600;text-decoration:none;padding:.8rem 1.4rem;border-radius:.4rem}
+.cta:hover{background:#f2cb62}
+.wave{display:block;width:100%;height:auto;margin-top:2rem}
+.wave path{fill:none;stroke-linecap:round}
+.axis{stroke:#ffffff33;stroke-width:1}
+.w1{stroke:var(--blue);stroke-width:3;stroke-dasharray:2400;stroke-dashoffset:2400;animation:draw 3.2s ease-out .3s forwards}
+.w2{stroke:var(--gold);stroke-width:2;stroke-dasharray:2400;stroke-dashoffset:2400;animation:draw 3.2s ease-out .9s forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+@media (prefers-reduced-motion:reduce){.w1,.w2{animation:none;stroke-dashoffset:0}}
+
+/* Seções */
+section{padding:4rem 0;border-bottom:1px solid var(--line)}
+section:last-of-type{border-bottom:0}
+h2{font:600 clamp(1.7rem,3.5vw,2.3rem)/1.2 var(--serif);margin:0 0 1.2rem}
+.about{display:grid;grid-template-columns:1fr;gap:2rem}
+.about p{max-width:60ch;margin:0 0 1rem}
+.side{display:flex;flex-direction:column;gap:2rem;align-items:flex-start}
+.photo{margin:0;width:11rem;height:11rem;border-radius:50%;border:4px solid var(--blue);padding:5px;background:var(--paper);box-shadow:0 0 0 2px var(--ink)}
+.photo img{width:100%;height:100%;object-fit:cover;border-radius:50%;display:block;background:var(--line)}
+.facts{list-style:none;margin:0;padding:0;border-left:3px solid var(--blue);padding-left:1.2rem}
+.facts li{margin-bottom:1rem}
+.facts strong{display:block;font-family:var(--serif);font-size:1.15rem}
+.facts span{color:var(--muted);font-size:.95rem}
+@media(min-width:800px){.about{grid-template-columns:1.6fr 1fr}}
+
+/* Vídeo */
+.video{background:var(--ink);border-radius:.6rem;overflow:hidden;aspect-ratio:16/9}
+.video video,.video iframe{width:100%;height:100%;display:block;border:0;background:#000}
+.caption{color:var(--muted);font-size:.95rem;margin-top:.8rem}
+
+/* Contatos */
+.contacts{list-style:none;margin:0;padding:0;display:grid;gap:.8rem;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr))}
+.contacts a{display:block;padding:1rem 1.2rem;border:1px solid var(--line);border-radius:.5rem;text-decoration:none;background:#fff}
+.contacts a:hover{border-color:var(--ink);background:#fff}
+.contacts b{display:block;font-family:var(--serif);font-size:1.15rem}
+.contacts small{color:var(--muted)}
+footer{padding:2rem 0;color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <h1>Seu Nome Completo</h1>
+    <p class="sub">Professor de Física e Matemática</p>
+    <a class="cta" href="#contato">Entrar em contato</a>
+  </div>
+  <svg class="wave" viewBox="0 0 1200 160" preserveAspectRatio="none" aria-hidden="true">
+    <line class="axis" x1="0" y1="80" x2="1200" y2="80"/>
+    <path class="w1" d="M0 80 C 50 0, 100 0, 150 80 S 250 160, 300 80 S 400 0, 450 80 S 550 160, 600 80 S 700 0, 750 80 S 850 160, 900 80 S 1000 0, 1050 80 S 1150 160, 1200 80"/>
+    <path class="w2" d="M0 80 C 50 20, 100 20, 150 80 S 250 140, 300 80 S 400 20, 450 80 S 550 140, 600 80 S 700 20, 750 80 S 850 140, 900 80 S 1000 20, 1050 80 S 1150 140, 1200 80"/>
+  </svg>
+</header>
+
+<main>
+  <section id="sobre">
+    <div class="wrap about">
+      <div>
+        <h2>Sobre mim</h2>
+        <p>Sou professor de Física e Matemática e acredito que visualizar um conceito é o caminho mais curto para entendê-lo. Por isso, nas minhas aulas uso animações, experimentos e exemplos do dia a dia.</p>
+        <p>[Escreva aqui 2 ou 3 frases sobre sua trajetória: onde leciona ou lecionou, níveis de ensino (Fundamental, Médio, pré-vestibular, graduação) e o que você valoriza como educador.]</p>
+      </div>
+      <div class="side">
+        <figure class="photo">
+          <!-- Coloque sua foto na mesma pasta com o nome foto.jpg (ideal: quadrada, 600x600 px) -->
+          <img src="foto.jpg" alt="Foto de Seu Nome, professor de Física e Matemática" width="600" height="600">
+        </figure>
+        <ul class="facts">
+          <li><strong>Formação</strong><span>Licenciatura em [Física/Matemática], [Instituição]</span></li>
+          <li><strong>Experiência</strong><span>[X] anos em [escolas/cursos]</span></li>
+          <li><strong>Ferramentas</strong><span>Manim, Python, GeoGebra, [outras]</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="video">
+    <div class="wrap">
+      <h2>Aula em vídeo</h2>
+      <div class="video">
+        <!-- OPÇÃO A: vídeo hospedado no próprio repositório (arquivos até ~100 MB).
+             Coloque o arquivo na mesma pasta com o nome aula.mp4 -->
+        <video controls preload="metadata" poster="">
+          <source src="aula.mp4" type="video/mp4">
+          Seu navegador não suporta vídeo.
+        </video>
+        <!-- OPÇÃO B: YouTube (recomendado para vídeos grandes). Apague a opção A e use:
+        <iframe src="https://www.youtube.com/embed/ID_DO_VIDEO" title="Aula de exemplo" allowfullscreen></iframe>
+        -->
+      </div>
+      <p class="caption">Animação feita com Manim: [tema do vídeo, ex.: composição de movimentos, derivada como inclinação].</p>
+    </div>
+  </section>
+
+  <section id="contato">
+    <div class="wrap">
+      <h2>Contato</h2>
+      <ul class="contacts">
+        <li><a href="https://wa.me/5582999999999"><b>WhatsApp</b><small>(82) 9 9999-9999</small></a></li>
+        <li><a href="mailto:seuemail@exemplo.com"><b>E-mail</b><small>seuemail@exemplo.com</small></a></li>
+        <li><a href="https://www.linkedin.com/in/seu-perfil"><b>LinkedIn</b><small>linkedin.com/in/seu-perfil</small></a></li>
+        <li><a href="http://lattes.cnpq.br/0000000000000000"><b>Currículo Lattes</b><small>Formação e produção completas</small></a></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">Maceió, Alagoas · Disponível para aulas presenciais e on-line</div>
+</footer>
+
+</body>
+</html>
